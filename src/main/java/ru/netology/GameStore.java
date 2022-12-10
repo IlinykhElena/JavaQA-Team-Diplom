@@ -30,11 +30,13 @@ public class GameStore {
      * если игра есть и false иначе
      */
     public boolean containsGame(Game game) {
+        boolean result = false;
         for (int i = 1; i < games.size(); i++) {
             if (games.get(i - 1).equals(game)) {
-                return true;
-            } else {return false;}
+                result = true;
+            } 
         }
+        return result;
     }
 
     /**
