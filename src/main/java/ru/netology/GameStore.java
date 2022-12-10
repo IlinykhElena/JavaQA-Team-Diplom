@@ -33,9 +33,8 @@ public class GameStore {
         for (int i = 1; i < games.size(); i++) {
             if (games.get(i - 1).equals(game)) {
                 return true;
-            }
+            } else {return false;}
         }
-        return false;
     }
 
     /**
